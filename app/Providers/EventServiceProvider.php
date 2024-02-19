@@ -23,7 +23,11 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,//byDefault
         ],
-       
+        // resister 
+        Send_MAil_Event::class => [
+            Send_MAil_Listener::class,
+        ],
+     
     ];
 
     /**
